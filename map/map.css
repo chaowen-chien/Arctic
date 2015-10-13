@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+#taiwan {
+    position: fixed;
+    left: -170px;
+}
+
+#aircraft {
+    position: fixed;
+}
+
+.station {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ff00ff;
+}
+
+.sign {
+    border: 1px solid #000000;
+}
+
+.title {
+    position: fixed;
+    left: 10px;
+    top: 450px;
+    font-family: MingLiU;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.data {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.hidden {
+    visibility: hidden;
+}

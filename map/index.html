@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <base target="marquee">
+    <link rel="stylesheet" type="text/css" href="map.css">
+    <link rel="stylesheet" type="text/css" href="sign.css">
+    <link rel="stylesheet" type="text/css" href="data.css">
+    <script src="map.js"></script>
+    <script src="aircraft.js"></script>
+    <script>
+        var ss = new stationData('1', 'SS',   '松山', '091623', '050', '10',  'G21',     '9999(7)', '<br>', 'FEW016<br>BKN035<br>BKN050', '17', '13', '0000');
+        var tp = new stationData('1', 'TP',   '中正', '091622', '060', '19', '<br>',     '9999(7)', '<br>', 'FEW016<br>BKN035<br>BKN050', '17', '14', '0000');
+        var po = new stationData('1', 'PO',   '新竹', '091611', '040', '31',  'G41',     '9999(7)', '<br>', 'SCT014<br>BKN021<br>BKN200', '18', '14', '3021');
+        var mq = new stationData('1', 'MQ', '清泉崗',   '0916', '010', '17', '<br>',     '9999(7)', '<br>',                     'FEW008', '22', '18', '0000');
+        var lg = new stationData('3', 'LG',   '水湳',   '0916', '010', '18', '<br>',     '8000(5)', '<br>',                     'SCT012', '25', '16', '0000');
+        var ku = new stationData('3', 'KU',   '嘉義',   '0916', '350', '16', '<br>', '7000(4+3/8)', '<br>',           'FEW012<br>SCT180', '25', '20', '2985');
+        var ws = new stationData('1', 'WS',   '台南',   '0916', '350', '12', '<br>',     '9999(7)', '<br>',                     'FEW012', '26', '19', '2985');
+        var zn = new stationData('1', 'ZN',   '台東',   '0916', '240', '12', '<br>',     '9999(7)', '<br>',           'SCT012<br>BKN050', '25', '23', '2986');
+        var yu = new stationData('3', 'YU',   '花蓮',   '0916', '050', '15', '<br>',     '8000(5)', '<br>', 'SCT018<br>BKN035<br>BKN060', '25', '22', '2988');
+        var bm = new stationData('1', 'BM',   '馬公',   '0916', '020', '18', '<br>',     '9999(7)', '<br>',                     'FEW014', '23', '17', '2990');
+        var ay = new stationData('3', 'AY',   '岡山',   '0916', '340', '12', '<br>',     '8000(5)', '<br>',                     'FEW012', '27', '19', '2986');
+        var dc = new stationData('1', 'DC',   '屏東', '091615', '270', '06', '<br>',     '9999(7)', '<br>',           'SCT012<br>BKN050', '22', '15', '3012');
+    </script>
+</head>
+
+<body>
+    <img id="taiwan" src="taiwan.jpg">
+    <script>
+        setSign();
+        setData();
+        setAircraft();
+        showData();
+    </script>
+</body>
+
+</html>

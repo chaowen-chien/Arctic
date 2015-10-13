@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Marquee</title>
+    <link rel="stylesheet" type="text/css" href="marquee.css">
+    <script src="marquee.js"></script>
+    <script>
+        var ss = new stationData('1', 'SS', '091623', '050', '10',  'G21',     '9999(7)', '<br>', 'FEW016<br>BKN035<br>BKN050', '17', '13', '0000');
+        var gm = new stationData('1', 'GM',   '0916', '040', '15', '<br>',     '9999(7)', '<br>',           'FEW010<br>SCT030', '23', '18', '2993');
+        var tp = new stationData('1', 'TP', '091622', '060', '19', '<br>',     '9999(7)', '<br>', 'FEW016<br>BKN035<br>BKN050', '17', '14', '0000');
+        var po = new stationData('1', 'PO', '091611', '040', '31',  'G41',     '9999(7)', '<br>', 'SCT014<br>BKN021<br>BKN200', '18', '14', '3021');
+        var mq = new stationData('1', 'MQ',   '0916', '010', '17', '<br>',     '9999(7)', '<br>',                     'FEW008', '22', '18', '0000');
+        var lg = new stationData('3', 'LG',   '0916', '010', '18', '<br>',     '8000(5)', '<br>',                     'SCT012', '25', '16', '0000');
+        var ku = new stationData('3', 'KU',   '0916', '350', '16', '<br>', '7000(4+3/8)', '<br>',           'FEW012<br>SCT180', '25', '20', '2985');
+        var ws = new stationData('1', 'WS',   '0916', '350', '12', '<br>',     '9999(7)', '<br>',                     'FEW012', '26', '19', '2985');
+        var ay = new stationData('3', 'AY',   '0916', '340', '12', '<br>',     '8000(5)', '<br>',                     'FEW012', '27', '19', '2986');
+        var kh = new stationData('3', 'KH',   '0916', '340', '08', '<br>', '5000(3+1/8)',   'HZ',                     'FEW015', '28', '18', '0000');
+        var dc = new stationData('1', 'DC', '091615', '270', '06', '<br>',     '9999(7)', '<br>',           'SCT012<br>BKN050', '22', '15', '3012');
+        var sq = new stationData('3', 'SQ',   '0916', '330', '08', '<br>', '7000(4+3/8)', '<br>',           'SCT012<br>SCT080', '29', '20', '2984');
+        var yu = new stationData('3', 'YU',   '0916', '050', '15', '<br>',     '8000(5)', '<br>', 'SCT018<br>BKN035<br>BKN060', '25', '22', '2988');
+        var cs = new stationData('3', 'CS',   '0916', '010', '07', '<br>',     '8000(5)', '<br>', 'SCT012<br>BKN030<br>BKN050', '25', '22', '2991');
+        var zn = new stationData('1', 'ZN',   '0916', '240', '12', '<br>',     '9999(7)', '<br>',           'SCT012<br>BKN050', '25', '23', '2986');
+        var fn = new stationData('1', 'FN',   '0916', '000', '00', '<br>',     '9999(7)', '<br>', 'FEW013<br>SCT030<br>OVC060', '26', '20', '2985');
+        var lt = new stationData('1', 'LT',   '0916', '050', '05', '<br>',     '9999(7)', '<br>',           'SCT012<br>BKN035', '23', '22', '2992');
+        var bm = new stationData('1', 'BM',   '0916', '020', '18', '<br>',     '9999(7)', '<br>',                     'FEW014', '23', '17', '2990');
+        var fg = new stationData('1', 'FG',   '0916', '000', '00', '<br>',     '9999(7)', '<br>',           'FEW012<br>SCT050', '21', '14', '2997');
+        var bs = new stationData('1', 'BS', '091617', '080', '03', '<br>',     '9999(7)', '<br>',                     'SCT012', '25', '15', '2989');
+        var fs = new stationData('3', 'FS',   '0916', '300', '04', '<br>',     '6000(4)', '<br>',           'SCT014<br>BKN040', '28', '22', '2986');
+    </script>
+</head>
+
+<body>
+    <script>
+        setHeader();
+        setTable1();
+        setTable2();
+        scrollSheet();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>氣象資訊展示系統</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        iframe {
+            position: fixed;
+            border: 0;
+            overflow: hidden;
+        }
+
+        #menu {
+            left: 0px;
+            top: 0px;
+            width: 40px;
+            height: 520px;
+        }
+
+        #map {
+            left: 40px;
+            top: 0px;
+            width: 432px;
+            height: 520px;
+        }
+
+        #main {
+            left: 472px;
+            top: 0px;
+            width: 100%;
+            height: 520px;
+        }
+
+        #marquee {
+            left: 0px;
+            top: 520px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        function iframeResize() {
+            // main
+            var w1 = document.getElementById("menu").scrollWidth;
+            var w2 = document.getElementById("map").scrollWidth;
+            var w = innerWidth - w1 - w2;
+            var w = w < 552 ? 552 : w;    // for resolution 1024x768
+            document.getElementById("main").style.width = w + "px";
+
+            // marquee
+            var h1 = document.getElementById("menu").scrollHeight;
+            var h = innerHeight - h1;
+            document.getElementById("marquee").style.width = innerWidth + "px";
+            document.getElementById("marquee").style.height = h + "px";
+        }
+    </script>
+</head>
+
+<body onload="iframeResize()" onresize="iframeResize()">
+    <iframe src="menu/index.html" name="menu" id="menu"></iframe>
+    <iframe src="map/index.html" name="map" id="map"></iframe>
+    <iframe src="sheet/index.html" name="main" id="main"></iframe>
+    <iframe src="marquee/index.html" name="marquee" id="marquee"></iframe>
+</body>
+
+</html>
